@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  whisper:
+    build: .
+    container_name: whisper-transcriber
+    volumes:
+      - .:/app                # Monte ton dossier courant dans /app
+    command: >
+      bash -lc '
+      mkdir -p out &&
+      whisper "reunion.mp3" --model medium --language fr --output_dir out
+      '
