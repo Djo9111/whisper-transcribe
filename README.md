@@ -1,4 +1,3 @@
-```markdown
 # 🗣️ Transcription Audio avec Whisper (Docker & Google Colab)
 
 Ce guide explique deux méthodes fiables pour transcrire des fichiers audio (réunions, entretiens, cours, etc.) en texte :  
